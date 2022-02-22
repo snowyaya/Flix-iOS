@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -47,7 +48,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                  // reload the data to call the functions again so to return movie count, title
                  self.tableView.reloadData()
                     
-                 // print(dataDictionary)
+                  print(dataDictionary)
                     
                  
 
@@ -66,14 +67,23 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                                                                
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
                      
-        let cell = UITableViewCell()
+        // dequeueReusableCell can give a recycle cell
+        let cell =
+                tableView.dequeueReusableCell(withIdentifier: "MovieCell")
+                as! MovieCell
         let movie = movies[indexPath.row] // access each movie in the rows
+        let title = movie["title"] as! String // access the title of the movie                                         and cast the title to String
+        let synopsis = movie["overview"] as! String
         
-        let title = movie["title"] as! String // access the title of the movie and cast the title to String
-        // print(title)
+        cell.titleLabel.text = title
+        cell.synopsisLabel.text = synopsis
         
-        // replace the whole section with the movie title
-        cell.textLabel!.text = title
+        let baseUrl = "https://image.tmdb.org/t/p/w185"
+        let posterPath = movie["poster_path"] as! String
+        let posterUrl = URL(string: baseUrl + posterPath)
+        
+        // Alamo will use the posterUrl to download the image
+        cell.posterView.af.setImage(withURL: posterUrl!)
         
         return cell
     }
