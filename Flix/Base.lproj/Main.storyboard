@@ -32,14 +32,14 @@
                                                     <rect key="frame" x="18" y="-10" width="94" height="128"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AG6-Uh-y4Q">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AG6-Uh-y4Q">
                                                     <rect key="frame" x="122" y="11" width="228" height="38"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osj-2d-bRv">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osj-2d-bRv">
                                                     <rect key="frame" x="122" y="57" width="228" height="46"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -51,7 +51,7 @@
                                         <connections>
                                             <outlet property="posterView" destination="1U2-V9-Uet" id="aad-66-vh9"/>
                                             <outlet property="synopsisLabel" destination="Osj-2d-bRv" id="iIt-Ih-HUJ"/>
-                                            <outlet property="titleLabel" destination="Osj-2d-bRv" id="7c6-AF-Z4P"/>
+                                            <outlet property="titleLabel" destination="AG6-Uh-y4Q" id="G7c-dg-iQF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -62,7 +62,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Movies" id="4OR-5B-zg5"/>
                     <connections>
-                        <outlet property="tableView" destination="jfC-hF-HC1" id="oX7-eS-3QT"/>
+                        <outlet property="tableView" destination="jfC-hF-HC1" id="gt7-hS-lge"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
