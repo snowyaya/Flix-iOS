@@ -31,17 +31,20 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1U2-V9-Uet">
                                                     <rect key="frame" x="18" y="-10" width="94" height="128"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="MovieCell"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AG6-Uh-y4Q">
-                                                    <rect key="frame" x="122" y="11" width="82" height="38"/>
+                                                    <rect key="frame" x="122" y="11" width="228" height="38"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="MovieCell"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osj-2d-bRv">
-                                                    <rect key="frame" x="122" y="57" width="66" height="46"/>
+                                                    <rect key="frame" x="122" y="57" width="228" height="46"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="MovieCell"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -50,9 +53,9 @@
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration" identifier="MovieCell"/>
                                         <connections>
-                                            <outlet property="posterView" destination="1U2-V9-Uet" id="xhr-Dg-t1F"/>
-                                            <outlet property="synopsisLabel" destination="Osj-2d-bRv" id="epP-mc-NIv"/>
-                                            <outlet property="titleLabel" destination="AG6-Uh-y4Q" id="Y4Q-TK-6go"/>
+                                            <outlet property="posterView" destination="1U2-V9-Uet" id="aad-66-vh9"/>
+                                            <outlet property="synopsisLabel" destination="Osj-2d-bRv" id="iIt-Ih-HUJ"/>
+                                            <outlet property="titleLabel" destination="Osj-2d-bRv" id="7c6-AF-Z4P"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
